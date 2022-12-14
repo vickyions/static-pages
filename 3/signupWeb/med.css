@@ -1,0 +1,55 @@
+@media screen and (max-width: 478px) {
+    #header-section {
+        margin-top: 68px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    #form-section {
+        margin-bottom: 53px;
+    }
+
+    .h1 {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+    }
+
+    .h1 + p {
+        margin-top: 27px;
+        font-size: 12px;
+    }
+
+    .h1 + p > span {
+        display: block;
+        width: 30ch;
+        margin: auto;
+    }
+
+    #offer {
+        padding: 20px 62px;
+    }
+
+    .form-container {
+        --pad: 23px;
+        border-radius: 4px;
+        padding-bottom: 18px;
+        margin-top: 15px;
+    }
+
+    input {
+        --f-size: 12px;
+        height: 40px;
+        padding-left: 19px;
+    }
+
+    button {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        height: 33px;
+    }
+
+    #tc {
+        font-size: 12px;
+        margin-top: 14px;
+    }
+}

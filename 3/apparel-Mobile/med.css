@@ -1,0 +1,65 @@
+@media screen and (max-width: 565px) {
+    body {
+        display: block;
+    }
+
+    #back {
+        display: none;
+    }
+
+    main {
+        margin: 25px 0;
+        padding: 0;
+    }
+
+    #back-small {
+        display: block;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    #logo-container {
+        margin-left: 27px;
+    }
+
+    #logo-circle {
+        --size: 29px;
+    }
+
+    #logo-head {
+        font-size: 14px;
+        letter-spacing: 4.5px;
+        line-height: 1.1;
+        margin-left: 8px;
+    }
+
+    #cta {
+        margin: 15px;
+    }
+
+    .h2 {
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #cta > p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #form1 {
+        --width: 348px;
+        --height: 50px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    input {
+        width: 302px;
+    }
+
+    button {
+        right: 0px;
+    }
+}

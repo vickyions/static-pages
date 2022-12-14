@@ -1,0 +1,22 @@
+@media screen and (max-width: 1025px) {
+.cta-container {
+	gap: 20px;
+}	
+#card2 {
+	transform: scale(1);
+}
+}
+
+@media screen and (max-width: 760px) {
+	.back {
+		width: 100%;
+	}
+
+	.back2 {
+		background-image: url('./main.svg');
+	}
+
+	.back1{
+		display: none;
+	}	
+}

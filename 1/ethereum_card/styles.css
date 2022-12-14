@@ -1,0 +1,103 @@
+:root {
+	--col1: #355764;
+	--col2: #5A8F7B;
+	--col3: #81CACF;
+	--col4: #FFEA11;
+
+	box-sizing: border-box;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body,p,h1 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--col1);
+}
+
+main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	background-color: var(--col2);
+	height: 500px;
+	width: 300px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	border-radius: 15px;
+	box-shadow: 0 15px 10px 15px rgb(13,47,60), 0 30px 5px 30px rgb(43,77,90);
+}
+
+#cardImg {
+	width: 270px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	box-shadow: 0 0 2px 1px var(--col1);
+}
+
+h1 {
+	margin-left: 15px;
+	font-size: 1.3em;
+}
+
+.details > p {
+	margin: 15px 15px;
+	color: rgb(43, 77, 90);
+}
+
+.eth {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.eth > p {
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 0.9em;
+}
+
+#itm1 {
+	color: var(--col4);
+}
+
+#itm2 {
+	color: rgb(43, 77, 90);
+}
+
+hr {
+	border-style: none;
+	border-top: 1.5px solid rgb(43, 77, 90);
+	width: 270px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.creater {
+	width: 270px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+span {
+	color: rgb(43,77,90);
+	margin-right: 2px;
+}
+
+#userImg {
+	width: 30px;
+	border-radius: 50%;
+	border: 1.5px solid var(--col4);
+}

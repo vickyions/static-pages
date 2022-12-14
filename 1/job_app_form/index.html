@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Vicky Soni" />
+    <meta description="Job App form" />
+    <title>Job Guru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <form id="job-form" action="." method="POST">
+        <h1>Job Form</h1>
+        <div class="felem">
+          <label class="label0" for="name">Full Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            minlength="3"
+            maxlength="30"
+            placeholder="John Doe"
+            required
+            autofocus
+          />
+        </div>
+        <div class="felem">
+          <label class="label1" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            minlength="6"
+            placeholder="johndoe@xyz.com"
+            required
+          />
+        </div>
+        <div id="felem-radio">
+          <fieldset form="job-form" id="field-gen">
+            <legend>Gender</legend>
+            <div class="felem">
+              <input
+                id="gen-male"
+                type="radio"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label class="label2" for="gen-male">Male</label>
+            </div>
+            <div class="felem">
+              <input
+                id="gen-female"
+                type="radio"
+                name="gender"
+                value="female"
+              />
+              <label class="label3" for="gen-female">Female</label>
+            </div>
+            <div class="felem">
+              <input
+                id="gen-nonbinary"
+                type="radio"
+                name="gender"
+                value="non-binary"
+              />
+              <label class="label4" for="gen-nonbinary">Non-Binary</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="felem">
+          <label class="label5" for="laptop">Laptop Brands</label>
+          <select id="laptop" name="laptop-brands" form="job-form" autocomplete>
+            <option value="" selected>--Select Laptop Brands--</option>
+            <optgroup label="Laptop Brands">
+              <option value="">Apple</option>
+              <option value="">Asus</option>
+              <option value="">HP</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="felem">
+          <label class="label6" for="age">Age</label>
+          <input
+            id="age"
+            type="number"
+            name="age"
+            min="18"
+            max="70"
+            placeholder="24"
+            required
+          />
+        </div>
+        <div class="felem">
+          <label class="label7" for="dob">Date of Birth</label>
+          <input
+            id="dob"
+            type="date"
+            name="dob"
+            min="1990-01-01"
+            max="2022-08-02"
+            required
+          />
+        </div>
+        <div class="felem">
+          <label class="label8" for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            minlength="8"
+            maxlength="64"
+            title="Input a password of min length 8"
+            required
+          />
+        </div>
+        <div class="felem">
+          <label class="label9" for="portfolio">Portfolio Link</label>
+          <input
+            id="portfolio"
+            type="url"
+            name="portfolio-link"
+            minlength="8"
+            placeholder="johndoe.page"
+          />
+        </div>
+        <button type="submit" form="job-form">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
